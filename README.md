@@ -49,11 +49,7 @@ Built-in Python libraries (no installation required):
 ## How to Run
 
 1. Ensure all dependencies are installed.  
-2. Run the application:
-
-```bash
-python connection.py
-
+2. Run the application: python connection.py
 3. Follow the prompts to log in and select the functionality you want to test.
 4. After completing a function, the menu will reappear so you can test other functionalities.
 5. Select “Exit the program” to terminate the application.
