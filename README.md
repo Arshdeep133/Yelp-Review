@@ -1,29 +1,39 @@
-# Yelp-Review
+# Yelp-Review CLI Application
 
-Libraries required for the applica􀆟on:
-1. pyinputplus: For input validation. To install run the following command in the terminal.
-pip install pyinputplus
-2. The rest of the libraries that I used are already inbuilt in visual studio code.
-* string
-* random
-* date􀆟me
-* pyodbc
-Please run connec􀆟on.py to test the applica􀆟on.
+## Overview
+Yelp-Review is a **command-line interface (CLI) application** written in Python 3 that allows users to interact with a simulated Yelp-like system. The application supports functionalities such as searching for businesses, searching for users, making friends, and writing reviews.  
 
+The program remains active until the user chooses **“Exit the program”**, allowing you to test multiple functionalities in a single session. All user inputs are validated to ensure smooth interaction with the SQL database.  
 
-## Overview:
-The application is a command line interface applica􀆟on wri􀆩en in python3. You do not need to recompile
-the application to test each func􀆟onality as it does not close on its own, you must select the op􀆟on ‘Exit
-the program’ to exit. A􀅌er running every func􀆟on, you will get the op􀆟ons again to test the other
-functionalities.
-The function is passed the login, cursor, and connec􀆟on so that the func􀆟ons can access the SQL. The
-func􀆟ons do the input valida􀆟on for all the user inputs.
-It contains the following files.
-1. connec􀆟on.py: This is this the file that will run the applica􀆟on as it contains the connec􀆟on required
-and it prompt the use for the login
-2. login.py: Contains the implementa􀆟on of the login func􀆟on and the selec􀆟on menu func􀆟on that will
-give the users with the op􀆟ons to test different functionalities
-3. search_business.py: Contain the implementa􀆟on of search business functionality
-4. search_user.py: Contain the implementa􀆟on of search user functionality
-5. make_friend.py: contain the implementa􀆟on of the make friend functionality
-6. write_review.py: contain the implementa􀆟on of the write review functionality
+---
+
+## Features
+- **Login system**: Securely authenticate users.  
+- **Search Business**: Look up businesses in the database.  
+- **Search User**: Find other users by username or other attributes.  
+- **Make Friend**: Send friend requests or connect with other users.  
+- **Write Review**: Submit reviews for businesses.  
+
+Each function receives the login, cursor, and connection objects so it can interact with the SQL database seamlessly.  
+
+---
+
+## File Structure
+| File | Description |
+|------|-------------|
+| `connection.py` | Entry point of the application. Handles database connection and prompts user login. Run this file to start the app. |
+| `login.py` | Implements the login functionality and displays the selection menu for testing different functionalities. |
+| `search_business.py` | Implements the “search business” functionality. |
+| `search_user.py` | Implements the “search user” functionality. |
+| `make_friend.py` | Implements the “make friend” functionality. |
+| `write_review.py` | Implements the “write review” functionality. |
+
+---
+
+## Prerequisites
+The following Python libraries are required:  
+
+- **pyinputplus** (for input validation)  
+  Install via terminal:
+  ```bash
+  pip install pyinputplus
