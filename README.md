@@ -37,3 +37,39 @@ The following Python libraries are required:
   Install via terminal:
   ```bash
   pip install pyinputplus
+
+Built-in Python libraries (no installation required):
+
+- **string**
+- **random**
+- **datetime**
+- **pyodbc**
+
+
+## How to Run
+
+1. Ensure all dependencies are installed.  
+2. Run the application:
+
+```bash
+python connection.py
+3. Follow the prompts to log in and select the functionality you want to test.
+4. After completing a function, the menu will reappear so you can test other functionalities.
+5. Select “Exit the program” to terminate the application.
+
+## Notes
+
+The application interacts with a SQL database; make sure your database connection details in connection.py are correct.
+
+All user inputs are validated to prevent errors.
+
+## Example Usage
+Welcome! Please log in:
+Username: user1
+Password: ****
+1. Search Business
+2. Search User
+3. Make Friend
+4. Write Review
+5. Exit the program
+Select an option: 1
